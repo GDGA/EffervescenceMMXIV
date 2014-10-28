@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name of Launda"
+        android:textColor="#333333"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:paddingBottom="2dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:paddingRight="6dp"
+            android:src="@drawable/designation" />
+
+        <TextView
+            android:id="@+id/Post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post"
+            android:textColor="#333333"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:paddingRight="6dp"
+            android:src="@drawable/phone" />
+
+        <TextView
+            android:id="@+id/Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textColor="#333333"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:paddingRight="6dp"
+            android:src="@drawable/email" />
+
+        <TextView
+            android:id="@+id/Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#333333"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

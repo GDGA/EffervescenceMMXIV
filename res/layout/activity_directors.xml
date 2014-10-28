@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Directors" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:gravity="center"
+        android:text="Director's Cut"
+        android:textSize="32sp" 
+        android:textColor="#333"/>
+    
+    
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" 
+        android:layout_below="@+id/textView1">
+
+        <ImageView
+            android:id="@+id/imageloc"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/map21"
+            tools:ignore="ContentDescription" />
+        
+        <TextView
+            android:id="@+id/loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:paddingLeft="1dp"
+            android:text="Online"
+            android:textColor="#333"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/imagetime"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/clock"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:textColor="#333"
+            android:text="14th-19th OCT"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+    
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll1"
+        android:paddingTop="2dp"
+        android:layout_centerHorizontal="true"
+        android:text="Favourite"
+        android:textColor="#333"
+        android:paddingBottom="5dp" />
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView1"
+        android:layout_below="@+id/checkBox1" >
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="About"
+                android:textColor="#333"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:padding="10dp"
+                android:text="Ever dreamt of being part of movies like Three Idiots, Rang De Basanti , The Social Network, Inception etc ? Ever dreamt of grabbing an Oscar by making documentary like Smile Pinky???? Ever daydreamt of rocking the world with your style of direction? No doubt, the answer is certainly yes. This time in Effervescence Rangtarangini The Dramatics club and Thunderbolt Audio, light and camera Club has brought a golden opportunity for you to make your dreams come true. Make a short movie or documentary of any kind viz. comedy, spoof, inspirational, journey, corporate (business) related etc . Bring up your creative skills and spellbind the viewers."
+                android:textColor="#333"
+                android:textSize="20sp"
+                tools:ignore="ObsoleteLayoutParam" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:gravity="center"
+                android:text="Rules"
+                android:textColor="#333"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView6"
+                android:padding="10dp"
+                android:text="Make a short movie or documentary of any kind viz. comedy, spoof, inspirational, journey, corporate (business) related etc .\n
+  The top 3 movies will win prizes and will be shown on the silver screen .We do not provide camera and any other technical resources.\n
+  There should not be any controversial issues involved in the script. The length of the movie should be at least 10-15 minutes .\n
+  From all the entries we will receive, three best movies will be selected to show on silver screen and will be awarded by certificates and with exciting prizes. All the entries should be reached with us before 19th of October (10:00 PM).
+"
+                android:textColor="#333"
+                android:textSize="20sp"
+                tools:ignore="ObsoleteLayoutParam" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:gravity="center"
+                android:text="Organisers"
+                android:textColor="#333"
+                android:textSize="32sp" />
+
+             <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView8"
+                android:clickable="true"
+                android:drawableLeft="@drawable/call"
+                  android:layout_centerHorizontal="true"
+                android:text="Saurabh Mishra: 8957477770"
+                android:textColor="#333"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </ScrollView>
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="0dp"
+                android:layout_toRightOf="@+id/checkBox1"
+                android:paddingTop="30dp"
+                android:src="@drawable/map1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignBottom="@+id/imageView3"
+                android:layout_toLeftOf="@+id/checkBox1"
+                android:paddingTop="15dp"
+                android:src="@drawable/clock4"
+                tools:ignore="ContentDescription" />
+            
+</RelativeLayout>

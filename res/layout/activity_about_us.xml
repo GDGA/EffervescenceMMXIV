@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFF"
+    tools:context=".AboutUs" >
+    
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_marginLeft="14dp"
+        android:gravity="center"
+        android:src="@drawable/finallogo"
+        tools:ignore="ContentDescription" />
+    
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView1"
+        android:gravity="center"
+        android:text="Effervescence"
+        android:textColor="#333"
+        android:textSize="32sp" />
+
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/imageView1"
+        android:layout_below="@+id/textView5" >"
+        
+        <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="643dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/scrollView1"
+        android:gravity="center"
+        android:text="Effervescence is a platform of youthful energy showcasing intellectuals, creativity and a cultural treat. The cultural and managerial spirits mingle to bring forth the Fizz, Frolic and Festivity of this extravaganza.
+
+Effervescence is a cultural extravaganza spanning 3 days of high octane action. The three days of campus events which comprise of informal and other events in the morning and to hold the night fever we have a full platter of dance, dramatics, music and literary competitions. The concluding night of the Effervescence is always the most anticipated and illustrious event which has seen bands like Bombay Vikings, Euphoria, Silk Route and Strings (to name a few) performing live.
+
+This Effervescence is going to take the definition of fun to a whole new dimension! So, don’t wait anymore. Join us this October in celebrating the occasion of absolute fun and entertainment. Management events, workshops, informals, dance, drama, music, rock night, celebrity night, etc. Pick up anything you are interested in!! There’s something for everyone.
+
+So, block your calenders from 17th October TO 19th October and be a part of Effervescence.
+"
+        android:textColor="#333"
+        android:textSize="20sp"
+        tools:ignore="ObsoleteLayoutParam" />
+        
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:onClick="facebook"
+        android:paddingTop="15dp"
+        android:src="@drawable/facebook"
+        tools:ignore="ContentDescription" />
+
+    	
+   
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignRight="@+id/scrollView1"
+        android:layout_marginRight="15dp"
+        android:paddingTop="15dp"
+        android:onClick="website"
+        android:src="@drawable/web2"
+        tools:ignore="ContentDescription" />
+
+        
+</RelativeLayout>

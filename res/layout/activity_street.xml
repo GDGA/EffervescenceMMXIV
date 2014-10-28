@@ -1,0 +1,202 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Street" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:gravity="center"
+        android:text="Street Soccer"
+        android:textSize="32sp" 
+        android:textColor="#333"/>
+    
+    
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" 
+        android:layout_below="@+id/textView1">
+
+        <ImageView
+            android:id="@+id/imageloc"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/map21"
+            tools:ignore="ContentDescription" />
+        
+        <TextView
+            android:id="@+id/loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:paddingLeft="1dp"
+            android:text="Tennis Court"
+            android:textColor="#333"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/imagetime"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/clock"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:textColor="#333"
+            android:text="14:00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+    
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll1"
+        android:paddingTop="2dp"
+        android:layout_centerHorizontal="true"
+        android:text="Favourite"
+        android:textColor="#333"
+        android:paddingBottom="5dp" />
+
+   <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView1"
+        android:layout_below="@+id/checkBox1" >
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="About"
+                android:textColor="#333"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:padding="10dp"
+                android:text="Inspired by the unbelievable trickery of today's skillful footballers, this one of its kind event is being staged at IIIT-A for the first time ever."
+                android:textColor="#333"
+                android:textSize="20sp"
+                tools:ignore="ObsoleteLayoutParam" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:gravity="center"
+                android:text="Rules"
+                android:textColor="#333"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView6"
+                android:padding="10dp"
+                android:text="1. Every team must have 6 members.\n 
+2. 5 players(1 goalkeeper) will play and 1 player as a substitute.\n 
+3. Total 2 substitutions are allowed., i.e the same player substituted earlier can go back in again.\n 
+4. Goal will be of knee height. \n
+5. Penalty will be awarded to a team if the opponent team has kicked the ball 3 times out of the court.\n 
+6. There will be two halves of 13 minutes each with a break in b/w. \n
+7. Referee's decision will be considered as final decision. Any argument or any misconduct may lead to disqualification of the team.\n 
+8. Any change in the rules will be detailed at the venue.\n
+                
+                "
+                android:textColor="#333"
+                android:textSize="20sp"
+                tools:ignore="ObsoleteLayoutParam" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:gravity="center"
+                android:text="Organisers"
+                android:textColor="#333"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView8"
+                android:clickable="true"
+                android:drawableLeft="@drawable/call"
+                android:layout_centerHorizontal="true"
+                android:text="Ankur Rao: 8052943469"
+                android:textColor="#333"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView9"
+                android:clickable="true"
+                android:drawableLeft="@drawable/call"
+                android:layout_centerHorizontal="true"
+                android:text="Subham Sharma: 9554708767"
+                android:textColor="#333"
+                android:textSize="20sp" />
+
+            
+        </RelativeLayout>
+    </ScrollView>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="0dp"
+                android:layout_toRightOf="@+id/checkBox1"
+                android:paddingTop="30dp"
+                android:src="@drawable/map1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignBottom="@+id/imageView3"
+                android:layout_toLeftOf="@+id/checkBox1"
+                android:paddingTop="15dp"
+                android:src="@drawable/clock4"
+                tools:ignore="ContentDescription" />
+            
+</RelativeLayout>

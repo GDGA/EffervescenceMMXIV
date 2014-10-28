@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.effervescencemmxiv"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/finallogo"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+        <activity
+            android:name="com.example.effervescencemmxiv.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Effervescence"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_effervescence"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.EFFE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Eventsbyday"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_eventsbyday"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.EBD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Day1"
+            android:label="@string/title_activity_day1"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Day2"
+            android:label="@string/title_activity_day2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Day3"
+            android:label="@string/title_activity_day3"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.ContactUs"
+            android:label="@string/title_activity_contact_us"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.CU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.ImageAdapter"
+            android:label="@string/title_activity_image_adapter" >
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.EventsByCategories"
+            android:label="@string/title_activity_events_by_categories"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.EVENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Developers"
+            android:label="@string/title_activity_developers"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.DEV" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Incendiary"
+            android:label="@string/title_activity_incendiary"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.INC" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.SetNotification"
+            android:label="@string/title_activity_set_notification"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.SN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Display_notification"
+            android:label="@string/title_activity_display_notification"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.DN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Event"
+            android:label="@string/title_activity_event"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.NE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.FavouriteEvents"
+            android:label="@string/title_activity_favourite_events"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.FAV" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Music"
+            android:label="@string/title_activity_music"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.MUS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Dance"
+            android:label="@string/title_activity_dance"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.DAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Drama"
+            android:label="@string/title_activity_drama"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.DRA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Literary"
+            android:label="@string/title_activity_literary"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.LIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Online"
+            android:label="@string/title_activity_online"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.ONL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Informal"
+            android:label="@string/title_activity_informal"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.INF" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Platzen"
+            android:label="@string/title_activity_platzen"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.PLA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Psychadelia"
+            android:label="@string/title_activity_psychadelia"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.PSY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Dumb"
+            android:label="@string/title_activity_dumb"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.DUM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Roadies"
+            android:label="@string/title_activity_roadies"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.ROA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Feathers"
+            android:label="@string/title_activity_feathers"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.FEA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Gully"
+            android:label="@string/title_activity_gully"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.GUL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Street"
+            android:label="@string/title_activity_street"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.STR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Gamers"
+            android:label="@string/title_activity_gamers"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.GAM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Carpe"
+            android:label="@string/title_activity_carpe"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.CAR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Lafrenze"
+            android:label="@string/title_activity_lafrenze"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.LAF" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Dram"
+            android:label="@string/title_activity_dram"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.DRAM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Blind"
+            android:label="@string/title_activity_blind"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.BLI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Antakshari"
+            android:label="@string/title_activity_antakshari"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.ANT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Crossfire"
+            android:label="@string/title_activity_crossfire"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.CRO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Bquiz"
+            android:label="@string/title_activity_bquiz"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.BQU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Friends"
+            android:label="@string/title_activity_friends"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.GOT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Basketball"
+            android:label="@string/title_activity_basketball"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.BAS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Alamode"
+            android:label="@string/title_activity_alamode"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.ALA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Collage"
+            android:label="@string/title_activity_collage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.COL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Tongues"
+            android:label="@string/title_activity_tongues"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.TON" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Chinatown"
+            android:label="@string/title_activity_chinatown"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.CHI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Tattoo"
+            android:label="@string/title_activity_tattoo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.TAT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Melodiux"
+            android:label="@string/title_activity_melodiux"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.MEL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Footloose"
+            android:label="@string/title_activity_footloose"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.FOO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Bindaas"
+            android:label="@string/title_activity_bindaas"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.BIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Bollywood"
+            android:label="@string/title_activity_bollywood"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.BOL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Trash"
+            android:label="@string/title_activity_trash"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.TRA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Directors"
+            android:label="@string/title_activity_directors"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.DIR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Unplugged"
+            android:label="@string/title_activity_unplugged"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.UNP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Arm"
+            android:label="@string/title_activity_arm"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.ARM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Djnight"
+            android:label="@string/title_activity_djnight"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.DJN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Celebrity"
+            android:label="@string/title_activity_celebrity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.CEL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Cognoscentia"
+            android:label="@string/title_activity_cognoscentia"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.COG" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Tugofwar"
+            android:label="@string/title_activity_tugofwar"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.TUG" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Doubletrouble"
+            android:label="@string/title_activity_doubletrouble"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.DOU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Management"
+            android:label="@string/title_activity_management"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.MAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Pronight"
+            android:label="@string/title_activity_pronight"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.PRO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Animequiz"
+            android:label="@string/title_activity_pronight"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.ANI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Treasure"
+            android:label="@string/title_activity_treasure"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.TRE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Perplexus"
+            android:label="@string/title_activity_perplexus"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.PER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Konqueror"
+            android:label="@string/title_activity_konqueror"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.KON" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Stegolica"
+            android:label="@string/title_activity_stegolica"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.STE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Admania"
+            android:label="@string/title_activity_admania"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.ADM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Ranneeti"
+            android:label="@string/title_activity_ranneeti"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.RAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Intuizione"
+            android:label="@string/title_activity_intuizione"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.INT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Day0"
+            android:label="@string/title_activity_day0"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.AboutUs"
+            android:label="@string/title_activity_about_us"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.ABT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Karaoke"
+            android:label="@string/title_activity_karaoke"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.KAR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Mun"
+            android:label="@string/title_activity_mun"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.MUN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Streetdance"
+            android:label="@string/title_activity_streetdance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.STD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Thrones"
+            android:label="@string/title_activity_thrones"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.THR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Pillow"
+            android:label="@string/title_activity_pillow"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.PIL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Completing"
+            android:label="@string/title_activity_completing"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.COM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Balloon"
+            android:label="@string/title_activity_balloon"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.BAL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Book"
+            android:label="@string/title_activity_book"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.BOO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Graffiti"
+            android:label="@string/title_activity_graffiti"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.GRA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Kahani"
+            android:label="@string/title_activity_kahani"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.KAH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.Cricket"
+            android:label="@string/title_activity_cricket"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.CRI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.effervescencemmxiv.SilverScreen"
+            android:label="@string/title_activity_silver_screen"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.example.effervescencemmxiv.SIL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

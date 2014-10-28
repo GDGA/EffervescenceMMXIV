@@ -1,0 +1,210 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Platzen" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:gravity="center"
+        android:text="Platzen"
+        android:textSize="32sp" 
+        android:textColor="#333"/>
+    
+    
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" 
+        android:layout_below="@+id/textView1">
+
+        <ImageView
+            android:id="@+id/imageloc"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/map21"
+            tools:ignore="ContentDescription" />
+        
+        <TextView
+            android:id="@+id/loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:paddingLeft="1dp"
+            android:text="Online"
+            android:textColor="#333"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/imagetime"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/clock"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:textColor="#333"
+            android:text="All Day"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+    
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll1"
+        android:paddingTop="2dp"
+        android:layout_centerHorizontal="true"
+        android:text="Favourite"
+        android:textColor="#333"
+        android:paddingBottom="5dp" />
+
+<ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView1"
+        android:layout_below="@+id/checkBox1" >
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="About"
+                android:textColor="#333"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:padding="10dp"
+                android:text="This is an event of numbers and ciphers. You will be given an encrypted message and a key and a little bit of our support via hint of the problem. You have to figure out the original message.So get ready to enter into this cryptoworld soon."
+                android:textColor="#333"
+                android:textSize="20sp"
+                tools:ignore="ObsoleteLayoutParam" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:gravity="center"
+                android:text="Rules"
+                android:textColor="#333"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView6"
+                android:padding="10dp"
+                android:text="1) All participants need to register prior to the event beginning.\n 
+2) Any user found indulging in foul play will be disqualified immediately. \n
+3) To be eligible for winning prizes the user must be currently registered in a university. Non students are welcome to participate.\n 
+4) Organizers decision shall be treated as final.\n
+                "
+                android:textColor="#333"
+                android:textSize="20sp"
+                tools:ignore="ObsoleteLayoutParam" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:gravity="center"
+                android:text="Organisers"
+                android:textColor="#333"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView8"
+                android:clickable="true"
+                android:drawableLeft="@drawable/call"
+                android:layout_centerHorizontal="true"
+                android:text="Chaitanya Agarawal: 8174070273"
+                android:textColor="#333"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView9"
+                android:clickable="true"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/call"
+                android:text="Vipul Jain: 8303478458"
+                android:textColor="#333"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView10"
+                android:clickable="true"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/call"
+                android:text="Shubham Yadav: 9454004981"
+                android:textColor="#333"
+                android:textSize="20sp" />
+
+            
+        </RelativeLayout>
+    </ScrollView>
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="0dp"
+                android:layout_toRightOf="@+id/checkBox1"
+                android:paddingTop="30dp"
+                android:src="@drawable/map1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignBottom="@+id/imageView3"
+                android:layout_toLeftOf="@+id/checkBox1"
+                android:paddingTop="15dp"
+                android:src="@drawable/clock4"
+                tools:ignore="ContentDescription" />
+            
+</RelativeLayout>

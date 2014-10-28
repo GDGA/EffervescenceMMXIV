@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Dram" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:gravity="center"
+        android:text="Innovation"
+        android:textColor="#333"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/imageloc"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/map21"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:paddingLeft="1dp"
+            android:text="Main Stage"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#333" />
+
+        <ImageView
+            android:id="@+id/imagetime"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/clock"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="19:30"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#333" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll1"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="5dp"
+        android:paddingTop="2dp"
+        android:text="Favourite"
+        android:textColor="#333" />
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView1"
+        android:layout_below="@+id/checkBox1" >
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="About"
+                android:textColor="#333"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:padding="10dp"
+                android:text="It is the main dramatics event conducted during effervescence.Each team should have a minimum of 6 members and cannot exceed 20. The maximum performance time is 25 minutes 'curtain to curtain' and minimum of 12 minutes.
+Team is free to choose the theme on its own. The drama can be bilingual. Usage of both English and Hindi is allowed.
+Negative marks will be awarded for both, exceeding time limit, and not completing the minimum time. Teams can be subjected to negative marking on issues like use of abusive language, vulgarity etc. in the play.
+Teams must bring all the costumes and props with them as the organizers will not provide anything. Only a few chairs and tables for stage setting may be provided.
+The background music and lighting is allowed and a system for the same is provided by the organizers.
+On the spot registrations (at least 4 hours prior to event) are allowed but online registrations are advisable.
+Any miscellaneous last minute demands to the organizers should be made 48 Hours prior to the performance, any demands after that will not be entertained.
+"
+                android:textColor="#333"
+                android:textSize="20sp"
+                tools:ignore="ObsoleteLayoutParam" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:gravity="center"
+                android:text="Organisers"
+                android:textColor="#333"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView8"
+                android:clickable="true"
+                android:drawableLeft="@drawable/call"
+                android:layout_centerHorizontal="true"
+                android:text="Saurabh Mishra  :  8957477770"
+                android:textColor="#333"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="0dp"
+        android:layout_toRightOf="@+id/checkBox1"
+        android:paddingTop="30dp"
+        android:src="@drawable/map1"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_toLeftOf="@+id/checkBox1"
+        android:paddingTop="15dp"
+        android:src="@drawable/clock4"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Effervescence MMXIV</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_effervescence">Effervescence</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_eventsbyday">Events by Day</string>
+    <string name="hello_world">Rock is the expression of elemental passions…
+
+It is a form of worship where no damn chains can hold you to the ground, where life is for your own to live your own way, which helps you break away from your common fashion and see through your blurry sight to become one with that elemental force of the universe…
+
+The famine-land of IIIT-A beckons all the rockers to clear their throats once again as it is time to fight fire with fire and set the rock world ablaze at the exclusive extravaganza of INCENDIARY – the Rock Show. Get ready to experience the ecstasy of having all your defenses torn down, of being released from yourself and being drawn into the ‘stairway to heaven’ when all are one and one is all…</string>
+    <string name="title_activity_day1">Day1</string>
+    <string name="title_activity_day2">Day2</string>
+    <string name="title_activity_day3">Day3</string>
+    <string name="title_activity_contact_us">Contacts</string>
+    <string name="title_activity_clubs">Clubs</string>
+
+    <string-array name="titles">
+        <item>\nAbout Us</item>
+        <item>\nEvents By Day</item>
+        <item>\nEvents By Category</item>
+        <item>\nFavourites</item>
+        <item>\nContact Us</item>
+        <item>\nRegister</item>
+    </string-array>
+
+    <array name="icons">
+        <item>@drawable/grp</item>
+        <item>@drawable/calc</item>
+        <item>@drawable/cat</item>
+        <item>@drawable/favourite</item>
+        <item>@drawable/contact</item>
+        <item>@drawable/register</item>
+    </array>
+
+    <string name="title_activity_events_by_catergory">EventsByCatergory</string>
+    <string name="title_activity_image_adapter">ImageAdapter</string>
+    <string name="title_activity_events_by_category">EventsByCategory</string>
+    <string name="title_activity_eventsby_category">Events By Category</string>
+    <string name="title_activity_events_by_categories">Events By Category</string>
+    <string name="title_activity_developers">Developers</string>
+    <string name="title_activity_incendiary">Incendiary - The Rock Night</string>
+    <string name="title_activity_set_notification">Reminder</string>
+    <string name="title_activity_nevent">Nevent</string>
+    <string name="title_activity_display_notification">Display_notification</string>
+    <string name="title_activity_event">Event</string>
+    <string name="title_activity_psychedelia">Psychedelia</string>
+    <string name="title_activity_favourite_events">Favourites</string>
+    <string name="title_activity_music">Music</string>
+    <string name="title_activity_dance">Dance</string>
+    <string name="title_activity_drama">Drama</string>
+    <string name="title_activity_literary">Literary</string>
+    <string name="title_activity_online">Online</string>
+    <string name="title_activity_informal">Informal</string>
+    <string name="title_activity_platzen">Platzen</string>
+    <string name="title_activity_psychadelia">Psychadelia</string>
+    <string name="title_activity_dumb">Dumb</string>
+    <string name="title_activity_roadies">Roadies</string>
+    <string name="title_activity_feathers">Feathers</string>
+    <string name="title_activity_gully">Gully</string>
+    <string name="title_activity_street">Street</string>
+    <string name="title_activity_gamers">Gamers</string>
+    <string name="title_activity_carpe">Carpe</string>
+    <string name="title_activity_lafrenze">Lafrenze</string>
+    <string name="title_activity_dram">Dram</string>
+    <string name="title_activity_blind">Blind</string>
+    <string name="title_activity_antakshari">Antakshari</string>
+    <string name="title_activity_crossfire">Crossfire</string>
+    <string name="title_activity_bquiz">Bquiz</string>
+    <string name="title_activity_friends">Friends</string>
+    <string name="title_activity_basketball">Basketball</string>
+    <string name="title_activity_alamode">Alamode</string>
+    <string name="title_activity_collage">Collage</string>
+    <string name="title_activity_toungues">Toungues</string>
+    <string name="title_activity_tongues">Tongues</string>
+    <string name="title_activity_chinatown">Chinatown</string>
+    <string name="title_activity_tattoo">Tattoo</string>
+    <string name="title_activity_melodiux">Melodiux</string>
+    <string name="title_activity_footloose">Footloose</string>
+    <string name="title_activity_bindaas">Bindaas</string>
+    <string name="title_activity_bollywood">Bollywood</string>
+    <string name="title_activity_trash">Trash</string>
+    <string name="title_activity_directors">Directors</string>
+    <string name="title_activity_unplugged">Unplugged</string>
+    <string name="title_activity_arm">Arm</string>
+    <string name="title_activity_djnight">Djnight</string>
+    <string name="title_activity_celebrity">Celebrity</string>
+    <string name="title_activity_cognoscentia">Cognoscentia</string>
+    <string name="title_activity_tugofwar">Tugofwar</string>
+    <string name="title_activity_double">Double</string>
+    <string name="title_activity_doubletrouble">Doubletrouble</string>
+    <string name="title_activity_management">Management</string>
+    <string name="title_activity_pronight">Pronight</string>
+    <string name="title_activity_animequiz">Animequiz</string>
+    <string name="title_activity_treasure">Treasure</string>
+    <string name="title_activity_streetdance">Streetdance</string>
+    <string name="title_activity_perplexus">Perplexus</string>
+    <string name="title_activity_konqueror">Konqueror</string>
+    <string name="title_activity_stegolica">Stegolica</string>
+    <string name="title_activity_admania">Admania</string>
+    <string name="title_activity_ranneeti">Ranneeti</string>
+    <string name="title_activity_intuizione">Intuizione</string>
+    <string name="title_activity_day0">Day0</string>
+    <string name="title_activity_treasure_hunt">Treasure Hunt</string>
+    <string name="title_activity_love">Register</string>
+    <string name="title_activity_about_us">About Us</string>
+    <string name="title_activity_karaoke">Karaoke</string>
+    <string name="title_activity_mun">Mun</string>
+    <string name="title_activity_thrones">Thrones</string>
+    <string name="title_activity_pillow">Pillow</string>
+    <string name="title_activity_completing">Completing</string>
+    <string name="title_activity_balloon">Balloon</string>
+    <string name="title_activity_book">Book</string>
+    <string name="title_activity_graffiti">Graffiti</string>
+    <string name="title_activity_kahani">Kahani</string>
+    <string name="title_activity_cricket">Cricket</string>
+    <string name="title_activity_silver_screen">SilverScreen</string>
+
+</resources>

@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/blr"
+    tools:context=".EventsByCategory" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/eg"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_alignLeft="@+id/imageView1"
+         android:layout_below="@+id/imageView1"
+         android:layout_marginLeft="25dp"
+         android:text="Music" />
+ 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginRight="50dp"
+        android:src="@drawable/shoe"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+         android:id="@+id/textView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_alignLeft="@+id/imageView2"
+         android:layout_below="@+id/imageView2"
+         android:layout_marginLeft="25dp"
+         android:text="Dance" />
+ 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/drama" />
+
+    <TextView
+         android:id="@+id/textView3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_alignLeft="@+id/imageView3"
+         android:layout_below="@+id/imageView3"
+         android:layout_marginLeft="20dp"
+         android:text="Drama" />
+ 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_centerVertical="true"
+        android:layout_alignTop="@+id/imageView3"
+        android:src="@drawable/book" />
+
+    <TextView
+         android:id="@+id/textView4"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/imageView4"
+         android:layout_below="@+id/imageView4"
+         android:layout_marginLeft="20dp"
+         android:layout_centerVertical="true"
+         android:text="Literary" />
+ 
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/informal" />
+
+    <TextView
+         android:id="@+id/textView5"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_alignLeft="@+id/imageView5"
+         android:layout_below="@+id/imageView5"
+         android:layout_marginLeft="15dp"
+         android:text="Informal" />
+ 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignTop="@+id/imageView5"
+        android:src="@drawable/online" />
+    
+    <TextView
+         android:id="@+id/textView6"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_alignLeft="@+id/imageView6"
+         android:layout_below="@+id/imageView6"
+         android:layout_marginLeft="20dp"
+         android:text="Online" />
+ 
+     <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/management" />
+     
+     <TextView
+         android:id="@+id/textView7"
+         android:layout_width="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/imageView7"
+         android:layout_below="@+id/imageView7"
+         android:layout_marginLeft="3dp"
+         android:text="Management" />
+ 
+     <TextView
+         android:id="@+id/textView8"
+         android:layout_width="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/imageView8"
+         android:layout_below="@+id/imageView8"
+         android:layout_marginLeft="15dp"
+         android:text="Pronights" />
+ 
+     <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView6"
+        android:layout_alignTop="@+id/imageView7"
+        android:src="@drawable/pronight" />
+
+</RelativeLayout>
